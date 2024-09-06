@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',
+  eslint: {
+    dirs: ['src', 'src-tauri'], 
+  },
+};
 
 export default nextConfig;

@@ -28,6 +28,7 @@ pub fn handler(app: &AppHandle, event: SystemTrayEvent) {
     // 获取应用窗口
     let window = app.get_window("main").unwrap();
     let parent_window = Some(&window);
+    let callback_app_handle = app.app_handle().clone();
     // 匹配点击事件
     match event {
         // 左键点击
@@ -57,7 +58,7 @@ pub fn handler(app: &AppHandle, event: SystemTrayEvent) {
         // 根据菜单 id 进行事件匹配
         SystemTrayEvent::MenuItemClick { id, .. } => match id.as_str() {
             "Pick Color" => {
-                message(parent_window, "Eidt File", "TODO");
+                let _ = callback_app_handle.emit_all("pick", ());
             }
             "new_file" => {
                 message(parent_window, "New File", "TODO");

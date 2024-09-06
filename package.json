@@ -6,10 +6,12 @@
     "dev": "tauri dev",
     "dev:web": "next dev",
     "build": "tauri build",
+    "build:web": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.6.0",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18"

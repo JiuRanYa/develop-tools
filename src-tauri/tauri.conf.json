@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "npm run build",
+    "beforeBuildCommand": "npm run build:web",
     "beforeDevCommand": "npm run dev:web",
     "devPath": "http://localhost:3000",
     "distDir": "../out"
@@ -33,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "develop-tools",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
