@@ -33,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "develop-tools",
+      "identifier": "fun.jiuran",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
